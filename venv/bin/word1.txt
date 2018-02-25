@@ -1,149 +1,149 @@
-﻿vejce|des oeufs
-topinky|des tartines
-cereálie|des céreáles
-palačinka|une crêpe
-slaná palačinka|une galette
-slaný|salé
-slepice|une poule
-kohout|un coq
-brambory|des pommes de terre
-hrnek|une tasse, un pot
-toto (m)|celui
-toto (ž)|celle
-toto (nesamostatné)|ce + nom
-tento/tamten|celui-ci/-là
-tato/tamta|celle-ci/-là
-dobrou chuť|bon apétit
-delikátní|delicieux
-sprchovat se|se doucher
-sklep|une cave
-přízemí|un rez-de-chaussée
-schody|un escalier
-dolů, dole|en bas
-nahoru, nahoře|en-haut
-obývací pokoj|une salle de séjour
-jídelna|une salle à manger
-Školní jídelna|un self
-pokoj|une chambre
-koupelna|une salle de bains
-záchod|untoilet
-kuchyně|une cuisine
-talíř|un plat/une assiete
-nůž|un couteau
-vidlička|une fourchette
-lžíce|une cuillère
-postel|un lit
-chodba|un couloir
-dveře|une porte
-okno|une fenetre
-okenice|des volets
-nábytek|un meuble
-pohovka|un divan
-stůl|un table
-Židle|une chaise
-klíč|une clé
-skříň|un placard
-lednice|un réfrigérateur
-med|un miel
-olej|un huil
-Šunka|un jambon
-sůl|un sel
-hořčice|une moutarde
-jogurt|un yaourt
-cukr|un sucre
-ocet|un vinaigre
-dochucovat|assaisonner
-snídaně|un pétit déjeuner
-Čočka|une lentille
-přidat|ajouter
-ochutnat|gouter
 polévka (hustá, vývar)|potage
-polévka z plodů moře|une bouillabaisse
 hroznové víno|un raisin
-růst, tlačit|pousser
-pěstovat|cultiver
-růst|une croissance
-salátová zálivka|une vinaigrette
+cukr|un sucre
 pít|boire
-běžný, zaběhlý|courant
-mouka|une farine
-považovat|considérer
-dobrodruh|un aventurier
-dobrodružství|une aventure
-objev|une découverte
-objevit|découvrir
-poté|ensuite
-tehdy, od|depuis
-vzít na vědomí|rendre en conscience
-trpět|souffrir
-balík|un paquet
-krajíc, plátek|une tranche
-lahev|une bouteille
-kousek|un morceau
-mít chuť|avoir (une) envie
-perník|un pain de mie
-krupice|une semoule
-salám|une merguez
+válka|une guerre
+stůl|un table
 paže|un bras
-noha|une jambe
-břicho|un ventre
-oko/oči|un oeil/des yeux
-Ústa|une bouche
-ucho|une oreille
-nos|un nez
-chodidlo|un pied
-dlaň|une main
-zelí|un chou
+delikátní|delicieux
 Štípat|piquer
-dochucovadlo|un condiment
-plody moře|des fruits de mer
-rybolov|une pêche
-langusta|une langoustine
-mušle|une coquille
-potápět|plonger
-víno|un vin
+oko/oči|un oeil/des yeux
 bábovka|un kouglof
-mandle|un´ amande
-pokuta|un´ amende
-kuskus|un couscous
-srdce|un coeur
-každý|chaucun
+lahev|une bouteille
+slavný|célèbre
 dříve, jednou|autrefois
 hra|un jeu
-osobnost|un personnage
-osoba|une persone
-hladomor|une famine
-obdržet|obtenir
-držet|tenir
+ocet|un vinaigre
+cereálie|des céreáles
+ucho|une oreille
+kousek|un morceau
+toto (nesamostatné)|ce + nom
+objev|une découverte
+brambory|des pommes de terre
+nikdo|personne
+rybolov|une pêche
+palačinka|une crêpe
+salám|une merguez
+ochutnat|gouter
+vzít na vědomí|rendre en conscience
+polévka z plodů moře|une bouillabaisse
+záchod|untoilet
+nos|un nez
+poté|ensuite
+tunel|tunnel
+přízemí|un rez-de-chaussée
+hrnek|une tasse, un pot
+tento/tamten|celui-ci/-là
+obývací pokoj|une salle de séjour
+langusta|une langoustine
+okno|une fenetre
+různý, variabilní|varié(e)
+kuchyně|une cuisine
+přístroj|un appareil
+slaný|salé
+Šunka|un jambon
+pohovka|un divan
+krajíc, plátek|une tranche
+vidlička|une fourchette
+balík|un paquet
+pokuta|un´ amende
+dochucovat|assaisonner
+dýchání|une respiration
+Čočka|une lentille
+chodba|un couloir
+dobrodružství|une aventure
+schody|un escalier
+každý|chaucun
+tato/tamta|celle-ci/-là
+přidat|ajouter
 přát, blahopřát|féliciter
-vyhrát|gagner
-usínat|s´endormir
-Žába|une grenouille
-za chvíli nashledanou|à tout à l´heure
+klíč|une clé
+dlaň|une main
+med|un miel
+plody moře|des fruits de mer
+toto (m)|celui
 následovat|
+slaná palačinka|une galette
+považovat|considérer
+Žába|une grenouille
+sklep|une cave
+Židle|une chaise
+topinky|des tartines
+Ústa|une bouche
+skříň|un placard
 pohleďme|voyons
-zmrzlina|une glace
+nahoru, nahoře|en-haut
+dolů, dole|en bas
+noha|une jambe
 není-li pravda|n´est-ce pas
-místo, prostor|un endroit
+osoba|une persone
+tehdy, od|depuis
+chodidlo|un pied
+pěstovat|cultiver
+hladomor|une famine
+objevit|découvrir
+Školní jídelna|un self
+sprchovat se|se doucher
+trpět|souffrir
+talíř|un plat/une assiete
+víno|un vin
+pokoj|une chambre
+lžíce|une cuillère
+Žádný/á|aucun(e)
+hořčice|une moutarde
+všichni/všechny|tous/toutes
+slepice|une poule
+mít chuť|avoir (une) envie
+mušle|une coquille
+podle mého názoru|À mon avi
+toto (ž)|celle
+postel|un lit
+připravený/á|prêt(e)
+dveře|une porte
+růst|une croissance
+lednice|un réfrigérateur
+obdržet|obtenir
+usínat|s´endormir
+vznalézt|inventer
+olej|un huil
+mouka|une farine
+osobnost|un personnage
+stopa, sjezdovka|une piste
+nábytek|un meuble
+﻿vejce|des oeufs
+pravítko|une régle
+vyhrát|gagner
+strava|une nourriture
+krupice|une semoule
+koupelna|une salle de bains
+sůl|un sel
+kuskus|un couscous
+jídelna|une salle à manger
+mořský/á|marin(e)
+zmrzlina|une glace
 vesmír, prostor|un espace
 kruh|un tour
-strava|une nourriture
-různý, variabilní|varié(e)
-nikdo|personne
-pravítko|une régle
-slavný|célèbre
-stopa, sjezdovka|une piste
-dokument (kinematograf|un documentaire
-Žádný/á|aucun(e)
-všichni/všechny|tous/toutes
-vznalézt|inventer
-přístroj|un appareil
-dýchání|une respiration
-mořský/á|marin(e)
-válka|une guerre
-bod|un point
-připravený/á|prêt(e)
-zaznamenat|marquer
+salátová zálivka|une vinaigrette
+za chvíli nashledanou|à tout à l´heure
 ztratit, prohrát|perdre
-tunel|tunnel
-podle mého názoru|À mon avi
+mandle|un´ amande
+břicho|un ventre
+běžný, zaběhlý|courant
+srdce|un coeur
+jogurt|un yaourt
+dobrou chuť|bon apétit
+bod|un point
+držet|tenir
+zelí|un chou
+dochucovadlo|un condiment
+dobrodruh|un aventurier
+místo, prostor|un endroit
+potápět|plonger
+perník|un pain de mie
+dokument (kinematograf|un documentaire
+růst, tlačit|pousser
+snídaně|un pétit déjeuner
+nůž|un couteau
+okenice|des volets
+zaznamenat|marquer
+kohout|un coq

@@ -98,6 +98,7 @@ class PairList(object):
             line = f.readline()
         self.add(pairs)
 
+
 def retrieve(lis):
     def without_newline(string):
         if "\n" in string:
@@ -190,10 +191,40 @@ if not word1 == PairList():
     word1.add(data.initial_pairs)
 
 if not main:
-    random.shuffle(word1.initial_pairs)
-    main = word1.cs()[0:25]
+    for i in range(14):
+        main.append("word1-" + str(word1.index(random.choice(word1))))
+    if len(word2) >= 7:
+        for i in range(7):
+            main.append("word2-" + str(word2.index(random.choice(word2))))
+    else:
+        for i in range(7-len(word2)):
+            main.append("word1-" + str(word1.index(random.choice(word1))))
+        for i in range(len(word2)):
+            main.append("word2-" + str(word2.index(random.choice(word2))))
+    if len(word3) <= 3:
+        for i in range(3):
+            main.append("word3-" + str(word3.index(random.choice(word3))))
+    else:
+        for i in range(7-len(word3)):
+            main.append("word1-" + str(word1.index(random.choice(word1))))
+        for i in range(len(word3)):
+            main.append("word3-" + str(word3.index(random.choice(word3))))
 
+print(main)
 save_list(main, "main.txt")
 word1.save("word1.txt")
 word2.save("word2.txt")
 word3.save("word3.txt")
+
+#main loop
+while True:
+    word = random.choice(main)
+    # debug
+    # print(data.search(word).cs)
+    pair = data.search(word)
+    user = input("Word: " + pair.fr + "\n\n")
+    if str(user) == word:
+        print("Success + \n")
+
+    else:
+        print("Failure. Correct word is " + word + "\n")
