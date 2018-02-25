@@ -1,0 +1,9 @@
+# def make_data(soubor):
+#     slovnik = []
+#     f = open(soubor + ".txt", "r")
+#     line = f.readline()
+#     while line != "":
+#         line = line.split("|")
+#         slovnik.append(Pair(line[0], line[1]))
+#         line = f.readline()
+#     return slovnik
