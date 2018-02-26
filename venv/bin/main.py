@@ -217,7 +217,7 @@ if not main:
         place = 0
         if i.split("-")[1] == "None":
             if i.split("-")[0] == "word1":
-                
+
             if i.split("-")[0] == "word2":
 
             if i.split("-")[0] == "word3":
@@ -229,6 +229,7 @@ save_list(main, "main.txt")
 word1.save("word1.txt")
 word2.save("word2.txt")
 word3.save("word3.txt")
+
 
 #main loop
 while True:
