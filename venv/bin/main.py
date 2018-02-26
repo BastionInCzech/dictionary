@@ -98,6 +98,9 @@ class PairList(object):
             line = f.readline()
         self.add(pairs)
 
+    def move(index, target):
+        target.initial_pairs.append(self.initial_pairs[index])
+        self.initial_pairs[index] = None
 
 def retrieve(lis):
     def without_newline(string):
@@ -192,24 +195,23 @@ if not word1 == PairList():
 
 if not main:
     for i in range(14):
-        main.append("word1-" + str(word1.index(random.choice(word1))))
-    if len(word2) >= 7:
+        main.append("word1-" + str(word1.initial_pairs.index(random.choice(word1.initial_pairs))))
+    if len(word2.initial_pairs) >= 7:
         for i in range(7):
-            main.append("word2-" + str(word2.index(random.choice(word2))))
+            main.append("word2-" + str(word2.initial_pairs.index(random.choice(word2.initial_pairs))))
     else:
-        for i in range(7-len(word2)):
-            main.append("word1-" + str(word1.index(random.choice(word1))))
-        for i in range(len(word2)):
-            main.append("word2-" + str(word2.index(random.choice(word2))))
-    if len(word3) <= 3:
+        for i in range(7-len(word2.initial_pairs)):
+            main.append("word1-" + str(word1.initial_pairs.index(random.choice(word1.initial_pairs))))
+        for i in range(len(word2.initial_pairs)):
+            main.append("word2-" + str(word2.initial_pairs.index(random.choice(word2.initial_pairs))))
+    if len(word3.initial_pairs) >= 3:
         for i in range(3):
-            main.append("word3-" + str(word3.index(random.choice(word3))))
+            main.append("word3-" + str(word3.initial_pairs.index(random.choice(word3.initial_pairs))))
     else:
-        for i in range(7-len(word3)):
-            main.append("word1-" + str(word1.index(random.choice(word1))))
-        for i in range(len(word3)):
-            main.append("word3-" + str(word3.index(random.choice(word3))))
-
+        for i in range(7-len(word3.initial_pairs)):
+            main.append("word1-" + str(word1.initial_pairs.index(random.choice(word1.initial_pairs))))
+        for i in range(len(word3.initial_pairs)):
+            main.append("word3-" + str(word3.initial_pairs.index(random.choice(word3.initial_pairs))))
 print(main)
 save_list(main, "main.txt")
 word1.save("word1.txt")
@@ -218,13 +220,16 @@ word3.save("word3.txt")
 
 #main loop
 while True:
-    word = random.choice(main)
     # debug
     # print(data.search(word).cs)
-    pair = data.search(word)
-    user = input("Word: " + pair.fr + "\n\n")
-    if str(user) == word:
-        print("Success + \n")
-
-    else:
-        print("Failure. Correct word is " + word + "\n")
+    # pair = data.search(word)
+    # user = input("Word: " + pair.cs + "\n\n")
+    # if str(user) == word:
+    #     print("Success + \n")
+    #
+    # else:
+    #     print("Failure. Correct word is " + word + "\n")
+    location = random.choice(main)
+    index = location[1]
+    pairlist = location.split[]
+    user = input("Translate: " + )

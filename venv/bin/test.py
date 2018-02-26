@@ -106,7 +106,10 @@ class PairList(object):
 # x.cs = "cau"
 # print(x.cs)
 
-x = "string"
-if "\n" in x:
-    x = x[:-1]
-print(x)
+# x = "string"
+# if "\n" in x:
+#     x = x[:-1]
+# print(x)
+
+
+print(str(None))

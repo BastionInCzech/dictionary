@@ -1,25 +1,28 @@
-sprchovat se
-nikdo
-mušle
-chodba
-pohovka
-různý, variabilní
-stopa, sjezdovka
-záchod
-tunel
-připravený/á
-vesmír, prostor
-slavný
-toto (m)
-přízemí
-nos
-nábytek
-talíř
-cukr
-pěstovat
-noha
-kousek
-osobnost
-Židle
-perník
-kuskus
+word1-1
+word1-94
+word1-57
+word1-53
+word1-2
+word1-48
+word1-70
+word1-107
+word1-100
+word1-46
+word1-27
+word1-128
+word1-45
+word1-100
+word1-53
+word1-85
+word1-81
+word1-109
+word1-36
+word1-18
+word1-52
+word1-37
+word1-58
+word1-101
+word1-144
+word1-125
+word1-79
+word1-132
