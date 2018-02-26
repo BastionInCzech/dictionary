@@ -212,6 +212,18 @@ if not main:
             main.append("word1-" + str(word1.initial_pairs.index(random.choice(word1.initial_pairs))))
         for i in range(len(word3.initial_pairs)):
             main.append("word3-" + str(word3.initial_pairs.index(random.choice(word3.initial_pairs))))
+    #None check
+    for i in main:
+        place = 0
+        if i.split("-")[1] == "None":
+            if i.split("-")[0] == "word1":
+                
+            if i.split("-")[0] == "word2":
+
+            if i.split("-")[0] == "word3":
+
+        place += 1
+
 print(main)
 save_list(main, "main.txt")
 word1.save("word1.txt")
@@ -220,16 +232,4 @@ word3.save("word3.txt")
 
 #main loop
 while True:
-    # debug
-    # print(data.search(word).cs)
-    # pair = data.search(word)
-    # user = input("Word: " + pair.cs + "\n\n")
-    # if str(user) == word:
-    #     print("Success + \n")
-    #
-    # else:
-    #     print("Failure. Correct word is " + word + "\n")
-    location = random.choice(main)
-    index = location[1]
-    pairlist = location.split[]
-    user = input("Translate: " + )
+    pass
