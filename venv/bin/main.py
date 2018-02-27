@@ -215,13 +215,13 @@ if not main:
     #None check
     for i in main:
         place = 0
-        if i.split("-")[1] == "None":
+        while i.split("-")[1] == "None":
             if i.split("-")[0] == "word1":
-
+                main[place] = random.choice(word1)
             if i.split("-")[0] == "word2":
-
+                main[place] = random.choice(word2)
             if i.split("-")[0] == "word3":
-
+                main[place] = random.choice(word3)
         place += 1
 
 print(main)
@@ -233,4 +233,15 @@ word3.save("word3.txt")
 
 #main loop
 while True:
-    pass
+    pick = random.choice(main)
+    while pick.split("-")[1] == "None":
+        place = main.index(pick)
+        if pick.split("-")[0] == "word1":
+            main[place] = random.choice(word1)
+        if pick.split("-")[0] == "word2":
+            main[place] = random.choice(word2)
+        if pick.split("-")[0] == "word3":
+            main[place] = random.choice(word3)
+    pairlist = pick.split("-")[0]
+    location = pick.split("-")[1]
+    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "]")))
