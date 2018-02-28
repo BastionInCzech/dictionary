@@ -244,4 +244,9 @@ while True:
             main[place] = random.choice(word3)
     pairlist = pick.split("-")[0]
     location = pick.split("-")[1]
-    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "]")))
+    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "] \n")))
+    if user == eval(pairlist + ".fr()[" + location + "]"):
+        print("Success")
+    else:
+        print("Incorrect: " + str(eval(pairlist + ".fr()[" + location + "] \n") ))
+        

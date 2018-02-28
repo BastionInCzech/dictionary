@@ -18,5 +18,3 @@ def convert_viki(file):
     i.close()
     o.close()
 convert_viki("slovicka")
-
-
