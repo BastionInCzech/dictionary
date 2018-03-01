@@ -1,6 +1,7 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
+import os
 
 class Pair(object):
     def __init__(self, cs, fr):
@@ -224,7 +225,7 @@ if not main:
                 main[place] = random.choice(word3)
         place += 1
 
-print(main)
+
 save_list(main, "main.txt")
 word1.save("word1.txt")
 word2.save("word2.txt")
@@ -233,6 +234,7 @@ word3.save("word3.txt")
 
 #main loop
 while True:
+    os.system("clear")
     pick = random.choice(main)
     while pick.split("-")[1] == "None":
         place = main.index(pick)
@@ -244,10 +246,13 @@ while True:
             main[place] = random.choice(word3)
     pairlist = pick.split("-")[0]
     location = pick.split("-")[1]
+    ## DEBUG
+    print(str(eval(pairlist + ".fr()[" + location + "] \n")))
     user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "] \n")))
     if user == eval(pairlist + ".fr()[" + location + "]"):
         print("Success")
-        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].right += 1" % (str(pairlist))
+        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].right += 1" % (str(pairlist)))
+
     else:
         print("Incorrect: " + str(eval(pairlist + ".fr()[" + location + "] \n") ))
-        
+        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].wrong += 1" % (str(pairlist)))
