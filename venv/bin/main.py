@@ -247,6 +247,7 @@ while True:
     user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "] \n")))
     if user == eval(pairlist + ".fr()[" + location + "]"):
         print("Success")
+        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].right += 1" % (str(pairlist))
     else:
         print("Incorrect: " + str(eval(pairlist + ".fr()[" + location + "] \n") ))
         
