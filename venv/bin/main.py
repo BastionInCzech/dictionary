@@ -1,3 +1,4 @@
+
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
@@ -13,9 +14,10 @@ class Pair(object):
 
 
 class PairList(object):
-    def __init__(self, initial_pairs=[]):
+    def __init__(self, upgrade = "", downgrade = "", initial_pairs=[]):
         self.initial_pairs = initial_pairs
-
+        self.downgrade = downgrade
+        self.upgrade = upgrade
     def add(self, addition):
         if isinstance(addition, list):
             for ii in addition:
@@ -99,9 +101,13 @@ class PairList(object):
             line = f.readline()
         self.add(pairs)
 
-    def move(index, target):
-        target.initial_pairs.append(self.initial_pairs[index])
-        self.initial_pairs[index] = None
+    def move(self, index, target):
+        if not isinstance(target, str):
+            target.initial_pairs.append(self.initial_pairs[index])
+            self.initial_pairs[index] = None
+        else:
+            eval("%s.initial_pairs.append(self.initial_pairs[%s])" % (target, index))
+            self.initial_pairs[index] = None
 
 def retrieve(lis):
     def without_newline(string):
@@ -133,7 +139,8 @@ def retrieve(lis):
 def save_list(lis, filename):
     f = open(filename, "w+")
     for i in lis:
-        f.write(str(i) + "\n")
+        if not "None" in i:
+            f.write(str(i) + "\n")
     f.close()
 
 
@@ -183,15 +190,15 @@ def without_newline(string):
 
 ##main asking loop
 data = PairList(initial_pairs=dict_to_pair(make_data("slovicka_ascii.txt")))
-word1 = PairList()
-word2 = PairList()
-word3 = PairList()
+word1 = PairList(upgrade = "word2", downgrade = "word1")
+word2 = PairList(upgrade = "word3", downgrade = "word1")
+word3 = PairList(upgrade = "word3", downgrade = "word2")
 main = retrieve("main.txt")
 word3.retrieve("word3.txt")
 word1.retrieve("word1.txt")
 word2.retrieve("word2.txt")
 
-if not word1 == PairList():
+if not word1 == PairList(upgrade = "word2", downgrade = "word1"):
     word1.add(data.initial_pairs)
 
 if not main:
@@ -251,8 +258,10 @@ while True:
     user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "] \n")))
     if user == eval(pairlist + ".fr()[" + location + "]"):
         print("Success")
-        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].right += 1" % (str(pairlist)))
+        eval("%s.move(%s, %s.upgrade)" % (pairlist, location, pairlist))
 
     else:
         print("Incorrect: " + str(eval(pairlist + ".fr()[" + location + "] \n") ))
-        eval(pairlist + "[" + pairlist + ".initial_pairs.index(%s)].wrong += 1" % (str(pairlist)))
+        print("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))
+        print(word1.downgrade)
+        eval("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))

@@ -104,8 +104,8 @@ mušle|une coquille
 potápět|plonger
 víno|un vin
 bábovka|un kouglof
-mandle|un´ amande
-pokuta|un´ amende
+mandle|un amande
+pokuta|un amende
 kuskus|un couscous
 srdce|un coeur
 každý|chaucun
@@ -140,10 +140,10 @@ všichni/všechny|tous/toutes
 vznalézt|inventer
 přístroj|un appareil
 dýchání|une respiration
-mořský/á|marin(e)
+mořský|marin
 válka|une guerre
 bod|un point
-připravený/á|prêt(e)
+připravený|prêt
 zaznamenat|marquer
 ztratit, prohrát|perdre
 tunel|tunnel

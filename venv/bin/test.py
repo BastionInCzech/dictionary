@@ -110,6 +110,8 @@ class PairList(object):
 # if "\n" in x:
 #     x = x[:-1]
 # print(x)
+class test(object):
+    def __init__(self, number):
+        self.number = number
 
-
-print(str(None))
+one = test()
