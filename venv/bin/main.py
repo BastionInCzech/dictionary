@@ -1,4 +1,3 @@
-
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
@@ -29,14 +28,16 @@ class PairList(object):
         ret = []
         n = 0
         for pair in self.initial_pairs:
-            ret.append(pair.cs)
+            if not pair is None:
+                ret.append(pair.cs)
         return ret
 
     def fr(self):
         ret = []
         n = 0
         for pair in self.initial_pairs:
-            ret.append(pair.fr)
+            if not pair is None:
+                ret.append(pair.fr)
         return ret
 
     def remove_newlines(self):
@@ -108,6 +109,7 @@ class PairList(object):
         else:
             eval("%s.initial_pairs.append(self.initial_pairs[%s])" % (target, index))
             self.initial_pairs[index] = None
+
 
 def retrieve(lis):
     def without_newline(string):
@@ -240,8 +242,11 @@ word3.save("word3.txt")
 
 
 #main loop
+was_wrong = False
 while True:
     os.system("clear")
+    if was_wrong:
+        print("Correct word: " + eval(str(pairlist + ".fr()[" + location + "]")) )
     pick = random.choice(main)
     while pick.split("-")[1] == "None":
         place = main.index(pick)
@@ -254,8 +259,8 @@ while True:
     pairlist = pick.split("-")[0]
     location = pick.split("-")[1]
     ## DEBUG
-    print(str(eval(pairlist + ".fr()[" + location + "] \n")))
-    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "] \n")))
+    ## print(str(eval(pairlist + ".fr()[" + location + "] \n")))
+    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "]) + \n"))
     if user == eval(pairlist + ".fr()[" + location + "]"):
         print("Success")
         eval("%s.move(%s, %s.upgrade)" % (pairlist, location, pairlist))
@@ -265,3 +270,4 @@ while True:
         print("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))
         print(word1.downgrade)
         eval("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))
+    was_wrong = True
