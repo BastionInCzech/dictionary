@@ -199,7 +199,8 @@ main = retrieve("main.txt")
 word3.retrieve("word3.txt")
 word1.retrieve("word1.txt")
 word2.retrieve("word2.txt")
-
+print(word1.cs()[20], word1.fr()[20])
+input()
 if not word1 == PairList(upgrade = "word2", downgrade = "word1"):
     word1.add(data.initial_pairs)
 
@@ -242,11 +243,19 @@ word3.save("word3.txt")
 
 
 #main loop
-was_wrong = False
+wrong = False
+loop = 0
+debug_string = ""
+
 while True:
     os.system("clear")
-    if was_wrong:
-        print("Correct word: " + eval(str(pairlist + ".fr()[" + location + "]")) )
+    print(debug_string)
+    if debug_string != "":
+        debug_string = ""
+    if wrong and loop != 0:
+        print("Correct word: " + eval(pairlist + ".fr()[" + location + "]"))
+    elif not wrong and loop != 0:
+        print("Success")
     pick = random.choice(main)
     while pick.split("-")[1] == "None":
         place = main.index(pick)
@@ -260,14 +269,19 @@ while True:
     location = pick.split("-")[1]
     ## DEBUG
     ## print(str(eval(pairlist + ".fr()[" + location + "] \n")))
-    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "]) + \n"))
+    user = input("Translate: " + str(eval(pairlist + ".cs()[" + location + "]") + "\n"))
     if user == eval(pairlist + ".fr()[" + location + "]"):
-        print("Success")
         eval("%s.move(%s, %s.upgrade)" % (pairlist, location, pairlist))
-
+        wrong = False
+        debug_string = "Podarilo se"
     else:
-        print("Incorrect: " + str(eval(pairlist + ".fr()[" + location + "] \n") ))
+        debug_string = "Posral's to"
         print("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))
         print(word1.downgrade)
         eval("%s.move(%s, %s.downgrade)" % (pairlist, location, pairlist))
-    was_wrong = True
+        wrong = True
+        loop += 1
+    save_list(main, "main.txt")
+    word1.save("word1.txt")
+    word2.save("word2.txt")
+    word3.save("word3.txt")
